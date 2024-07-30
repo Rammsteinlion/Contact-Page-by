@@ -8,6 +8,7 @@
 body {
   background-image: linear-gradient(130deg, red -70%, #4036a9 70%);
   min-height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .content_page {
@@ -15,36 +16,115 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
 
 .content-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   gap: 1rem;
   width: 100%;
   color: #fff;
-  font-family: "Be Vietnam Pro", sans-serif;
 }
 
-.content-title > h1 {
-  width: 20%;
-  text-wrap: wrap;
-  font-size: 30px;
+.title-text{
+  font-size: 40px;
+  font-weight: 600;
 }
 
-.content-title > p {
-  width: 22%;
-  text-wrap: wrap;
-  font-size: 15px;
+.subtitle-text{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .form_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   width: 800px;
   height: 500px;
   background-color: rgb(255 255 255 / 30%);
   backdrop-filter: blur(10px);
   border-radius: 15px;
+  padding: 2rem;
+}
+
+.inputField{
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form_input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.inputField {
+  flex: 1 1 calc(50% - 16px);
+  box-sizing: border-box; 
+}
+
+
+.inputField label{
+  color: white;
+  font-size: 13px;
+}
+
+
+.inputField input{
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 10px; 
+}
+
+.inputField select{
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: start; 
+  padding-left: 10px; 
+}
+
+.inputField select:first-of-type {
+  font-weight: 600; 
+}
+
+.inputField input::placeholder{
+  color: #CDD5E0;
+
+}
+
+.form_text{
+  width: 100%;
+  border-radius: 15px;
+  height: 250px;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .title-text{
+    font-size: 30px;
+  }
+  .subtitle-text{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .form_contact {
+    width: 350px;
+  }
+
+  .inputField {
+    flex: 1 1 100%;
+    box-sizing: border-box; 
+  }
 }
