@@ -16,8 +16,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 1.5rem;
+}
+
+.content_page label {
+  color: white;
+  font-size: 13px;
 }
 
 .content-title {
@@ -30,12 +35,12 @@ body {
   color: #fff;
 }
 
-.title-text{
+.title-text {
   font-size: 40px;
   font-weight: 600;
 }
 
-.subtitle-text{
+.subtitle-text {
   font-size: 20px;
   font-weight: 400;
   text-align: center;
@@ -46,14 +51,14 @@ body {
   flex-direction: column;
   gap: 2rem;
   width: 800px;
-  height: 500px;
+  height: auto;
   background-color: rgb(255 255 255 / 30%);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 2rem;
 }
 
-.inputField{
+.inputField {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
@@ -67,64 +72,71 @@ body {
 
 .inputField {
   flex: 1 1 calc(50% - 16px);
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-
-.inputField label{
-  color: white;
-  font-size: 13px;
-}
-
-
-.inputField input{
+.inputField input {
   height: 50px;
   border-radius: 10px;
   border: none;
   outline: none;
-  padding-left: 10px; 
+  padding-left: 10px;
 }
 
-.inputField select{
+.inputField select {
   height: 50px;
   border-radius: 10px;
   border: none;
   outline: none;
-  text-align: start; 
-  padding-left: 10px; 
+  text-align: start;
+  padding-left: 10px;
 }
 
 .inputField select:first-of-type {
-  font-weight: 600; 
+  font-weight: 600;
 }
 
-.inputField input::placeholder{
-  color: #CDD5E0;
-
+.inputField input::placeholder {
+  color: #cdd5e0;
 }
 
-.form_text{
+.form_textarea{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form_text {
   width: 100%;
   border-radius: 15px;
   height: 250px;
+  resize: none;
 }
 
+.btn-accept{
+ width: 100%;
+ height: 50px;
+ border-radius: 15px;
+ border: none;
+ outline: none;
+}
 
 @media only screen and (max-width: 640px) {
-  .title-text{
+  .title-text {
     font-size: 30px;
   }
-  .subtitle-text{
+  .subtitle-text {
     font-size: 15px;
     text-align: center;
   }
 
   .form_contact {
     width: 350px;
+    height: auto;
   }
 
   .inputField {
     flex: 1 1 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
 }
