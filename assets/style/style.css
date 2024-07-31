@@ -111,6 +111,7 @@ body {
   border-radius: 15px;
   height: 250px;
   resize: none;
+  padding: 10px;
 }
 
 .btn-accept{
